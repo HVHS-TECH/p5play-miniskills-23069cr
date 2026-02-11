@@ -9,14 +9,32 @@
 /*******************************************************/
 function setup() {
 	console.log("setup: ");
+	cnv = new Canvas(1000, 1000);
+world.gravity.y = 10;
+circle = new Sprite(500, 200, 100) .drag = 1;
+circle.color = 'cyan';
 
+wallLH  = new Sprite(0, 1000/2, 8, 1000, 'k') .bounciness = 0.5;
+wallRH  = new Sprite(1000, 1000/2, 8, 1000, 'k') .bounciness = 0.5;
+wallTop = new Sprite(500, 28, 1000, 8, 'k') .bounciness = 0.5;
+wallBot = new Sprite(500, 975, 1000, 8, 'k') .bounciness = 0.5;
+
+	for (i = 0; i < 10; i++) {
+ 	 alien = new Sprite(500, 500, 30, 30);
+ 	 alien.vel.x = random(-7, 8);
+ 	 alien.vel.y = random(-7, 8);
+ 	 alien.bounciness = random(1, 4);
+  	 alien.friction = 0;
+	const VELARRAY = [-1, 1];
+	randNum = random(4, 7) * random(VELARRAY);
+	}
 }
 	
 /*******************************************************/
 // draw()
 /*******************************************************/
 function draw() {
-	
+	background ('grey')
 }
 
 /*******************************************************/
