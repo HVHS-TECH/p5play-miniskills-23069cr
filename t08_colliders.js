@@ -17,11 +17,7 @@ wallRH  = new Sprite(1000, 1000/2, 8, 1000, 'k') .bounciness = 0.5;
 wallTop = new Sprite(500, 28, 1000, 8, 'k') .bounciness = 0.5;
 wallBot = new Sprite(500, 975, 1000, 8, 'k') .bounciness = 0.5;
 
-mousesprite = new Sprite(500, 500, 40, 40, 'd');
-mousesprite.color = 255,200,200;
-mousesprite.rotationSpeed = 2;
-
-ball_1 = new Sprite(width/2, height/2, 20, 'd');
+ball_1 = new Sprite(width/2, 200, 20, 'd');
 ball_1.vel.x = 10;
 alienGroup = new Group();
 if (ball_1.bounciness <= 1) {
@@ -48,10 +44,6 @@ _ssss.remove();
 /*******************************************************/
 function draw() {
   background(255, 200, 200);
-  mousesprite.moveTowards(mouseX, mouseY, 0.05);
-if (mouse.presses()) {
-mousesprite.moveTo(mouseX, mouseY, 1);
-}
 }
 
 /*******************************************************/

@@ -11,7 +11,7 @@ function setup() {
 	console.log("setup: ");
 	cnv = new Canvas(1000, 1000);
 world.gravity.y = 10;
-circle = new Sprite(500, 200, 100) .drag = 1;
+circle = new Sprite(200, 200, 100) .drag = 1;
 circle.color = 'cyan';
 
 wallLH  = new Sprite(0, 1000/2, 8, 1000, 'k') .bounciness = 0.5;
