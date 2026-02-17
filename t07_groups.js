@@ -21,7 +21,7 @@ wallBot = new Sprite(500, 975, 1000, 8, 'k') .bounciness = 0.5;
 
 alienGroup = new  Group();
 	for (i = 0; i < 100; i++) {
- 	 alien = new Sprite(500, 500, 20, 20);
+ 	 alien = new Sprite(width/2, height/2, 20, 20);
   alien.vel.x = 3;
   alien.vel.y = 4;
   alien.bounciness = 1;
