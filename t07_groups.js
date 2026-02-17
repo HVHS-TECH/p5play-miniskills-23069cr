@@ -19,7 +19,7 @@ wallRH  = new Sprite(1000, 1000/2, 8, 1000, 'k') .bounciness = 0.5;
 wallTop = new Sprite(500, 28, 1000, 8, 'k') .bounciness = 0.5;
 wallBot = new Sprite(500, 975, 1000, 8, 'k') .bounciness = 0.5;
 
-alienGroup = newGroup();
+alienGroup = new  Group();
 	for (i = 0; i < 100; i++) {
  	 alien = new Sprite(500, 500, 20, 20);
   alien.vel.x = 3;
