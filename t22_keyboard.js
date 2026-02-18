@@ -24,14 +24,11 @@ background ('grey')
 
 	if (kb.pressing('left')) {
 Rect.vel.x = -2;
-}
-else if (kb.pressing('right')) {   
+} else if (kb.pressing('right')) {   
 Rect.vel.x = 2;
-}
-else if (kb.pressing('down')){
+} else if (kb.pressing('down')){
 	Rect.vel.y = 2;
-}
-else if (kb.pressing('up')){
+} else if (kb.pressing('up')){
 	Rect.vel.y = -2;
 }
 
@@ -41,11 +38,9 @@ Rect.vel.x = 0;
 }
 else if (kb.released('right')){
 Rect.vel.x = 0;
-}
-else if (kb.released('down')){
+} else if (kb.released('down')){
 Rect.vel.y = 0;
-}
-else if (kb.released('up')){
+} else if (kb.released('up')){
 Rect.vel.y = 0;
 }
 }
