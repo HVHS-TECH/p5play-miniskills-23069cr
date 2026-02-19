@@ -35,8 +35,7 @@ Rect.vel.x = 2;
 
 if (kb.released('left')) {
 Rect.vel.x = 0;
-}
-else if (kb.released('right')){
+} else if (kb.released('right')){
 Rect.vel.x = 0;
 } else if (kb.released('down')){
 Rect.vel.y = 0;

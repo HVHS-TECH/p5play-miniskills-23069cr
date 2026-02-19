@@ -10,12 +10,12 @@
 /*******************************************************/
 function setup() {
   console.log("setup: ");
-cnv = new Canvas(1000, 1000);2
+cnv = new Canvas(1500, 1000);2
 
 wallLH  = new Sprite(0, 1000/2, 8, 1000, 'k') .bounciness = 0.5;
-wallRH  = new Sprite(1000, 1000/2, 8, 1000, 'k') .bounciness = 0.5;
-wallTop = new Sprite(500, 28, 1000, 8, 'k') .bounciness = 0.5;
-wallBot = new Sprite(500, 975, 1000, 8, 'k') .bounciness = 0.5;
+wallRH  = new Sprite(1500, 1000/2, 8, 1000, 'k') .bounciness = 0.5;
+wallTop = new Sprite(500, 28, 2000, 8, 'k') .bounciness = 0.5;
+wallBot = new Sprite(500, 975, 2000, 8, 'k') .bounciness = 0.5;
 
 ball_1 = new Sprite(width/2, 200, 20, 'd');
 ball_1.vel.x = 10;
@@ -23,10 +23,10 @@ alienGroup = new Group();
 if (ball_1.bounciness <= 1) {
   ball_1.bounciness = 1;
 }
-for (i = 0; i < 100; i++) {
+for (i = 0; i < 200; i++) {
   alien = new Sprite();
-  alien.vel.x = 3;
-  alien.vel.y = 4;
+  alien.vel.x =  random(1, 4);
+ 	 alien.vel.y = random(1, 4);
   alien.bounciness = 1;
   alien.friction = 0;
   alienGroup.add(alien);

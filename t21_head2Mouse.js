@@ -22,9 +22,8 @@ Rect.rotationSpeed = 1;
 function draw() {
 	background ('grey')
 
-Rect.moveTowards(mouseX, mouseY, 1);
-if (mouse.presses()) {
-Rect.moveTo(xPos, yPos, 1);
+if (mouse.pressing()) {
+ Rect.moveTo(mouseX, mouseY, 6);
 }
 }
 
